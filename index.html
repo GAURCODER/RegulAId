@@ -14,6 +14,15 @@
         placeholder="Enter document text here..."
         rows="6"
       ></textarea>
+      <div id="complianceOptions">
+        <label>
+          <input type="radio" name="compliance" id="gdprRadio" /> GDPR
+        </label>
+        <label>
+          <input type="radio" name="compliance" id="popaiRadio" /> POPAI
+        </label>
+      </div>
+
       <button onclick="fetchComplianceData()">Check Compliance</button>
 
       <div id="loading" class="hidden">
